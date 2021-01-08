@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    overflow: hidden;
+}
+
+.container {
+    width: 900px;
+    margin: 0 auto;
+}
+
+.wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 3;
+    overflow: auto;
+    background: #A770EF;
+    background: -webkit-linear-gradient(to right, #FDB99B, #CF8BF3, #A770EF);
+    background: linear-gradient(to right, #FDB99B, #CF8BF3, #A770EF); 
+    min-height: 100%;
+    transform-origin: left top;
+    transition: transform 0.3s ease-in;
+    box-shadow: -8px 8px 30px  #0e0e0e;
+}
+
+.menu {
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #1f1f1f;
+    overflow: hidden;
+}
+
+.button {
+    z-index: 4;
+    font-size: 3rem;
+    position: fixed;
+    bottom: 1rem;
+    left: 1rem;
+    /* color: white; */
+    /* text-shadow: 1px 5px black; */
+}
+
+.shadow {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: black;
+    opacity: 0;
+    transition: transform 0.3s ease-in, opacity 0.3s ease-in;
+    z-index: -1;
+    transform-origin: left top;
+}
+
+.menu ul {
+    position: absolute;
+    left: 1rem;
+    bottom: 5rem;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.menu ul li {
+    list-style-type: none;
+    font-size: 3.5rem;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: rgb(180, 180, 180);
+    transition: opacity 0.2s ease-in, text-shadow 0.2s ease-in;
+    opacity: 0.3;
+}
+
+.menu ul li a:hover {
+    text-shadow: 0 0 2px white;
+    opacity: 1;
+}
+
+.content {
+    padding: 4rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title {
+    color: white;
+    font-size: 4rem;
+    opacity: 0.6;
+}
+
+.image {
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+.image img {
+    /* position: absolute; */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: 0.5rem solid white;
+    box-shadow: 3px 3px 20px  #1b1b1b;
+
+}
+
+.text {
+    color: #1f1f1f;
+}
